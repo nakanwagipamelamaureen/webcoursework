@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+
+}
+navbar{
+    color:blanchedalmond;
+    font-size: small;
+    justify-content: space-between;
+    font-weight: bold;
+    font-style: italic;
+}
+div{
+    height: 1000px;
+    width: 4000px;
+    background-image:url(1.jpg)
+}
+h1{
+    color: rgb(140, 127, 255);
+    font-weight: bolder;
+    font-display:unset;
+    font-style: oblique;
+}
+h2{
+    font-weight:bold;
+    color:rgb(31, 2, 44);
+}
+h3{
+    font-weight: bold;
+text-decoration: solid;
+text-justify: inter-cluster;
+}
+h4{
+    font-weight: bold;
+}
+h5{
+    font-weight: bold;
+}
