@@ -17,37 +17,62 @@
   .welcome{
     color: rgb(130, 8, 211);
   }
+  .card-details{
+    background-color: rgb(189, 34, 34);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .row{
+    background-color: #000;
+    color: #099c30;
+  }
+  .card2{
+    color: #fff;
+  }
+  .navbar-nav{
+    display: flex;
+    justify-content: space-between;
+  }
  
 </style>
-<body>
-  <div class="body">
-    <!--navbar starts-->
-  <div class="icon justify-content-start"><img src="./icon.jpg
-    " alt="icon" width="120px" height="70px">
-    <!--navend begins here-->
-  <ul class="nav justify-content-end">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">HOME</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">ABOUT</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">SERVICE</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        MORE
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
-      </a>
-    </li>
-  </ul>
-</div>
+<body class="body">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">TECH SPOT</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Phones
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Brand new</a></li>
+              <li><a class="dropdown-item" href="#">Dubia used</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Europe used</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Laptops</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
   <!--navbar ends-->
   <!--welcome-->
@@ -56,7 +81,9 @@
   <p>To our new website where you shop your favorite accessories,ie.phones,computers,
     macbooks,</p>
   </div>
-    <div class="card" style="width: 90%;">
+  <!--card one of  intro to the business-->
+  <div class="card-details">
+    <div class="card1" style="width: 90%;">
       <div class="card-body">
         <h3 class="card-title">Mobileshop Uganda - iPhones, MacBook & Laptop Shop in Kampala | Hisense Fridge | JBL Speakers</h3>
         <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
@@ -65,9 +92,12 @@
         <a href="#" class="card-link">clink here for location</a>
       </div>
     </div>
+    </div>
+    <!--special offer cards-->
+    <div class="row">
     <div class="row">
       <div class="col-sm-6 mb-3 mb-sm-0">
-        <div class="card">
+        <div class="card2">
           <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">currently running on black friday deals </p>
@@ -77,7 +107,7 @@
         </div>
       </div>
       <div class="col-sm-6">
-        <div class="card">
+        <div class="card2">
           <div class="card-body">
             <h5 class="card-title">Need more offer we gatchu</h5>
             <p class="card-text"> For the IT lovers we have the best brands for currently running </p>
@@ -87,7 +117,49 @@
         </div>
       </div>
     </div>
-
+  </div>
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <br><button class="btn btn-primary" type="button">MORE OF US BELLOW</button><br>
+  </div>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="./IPHONE.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">all iphone of different prices</h5>
+          <p class="card-text">starting from UGX. 750,000</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="./hp.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">AN HP ELITEBOOK</h5>
+          <p class="card-text">AT UGX.1,200,000</p>
+          <P> more in store</P>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="./galaxy note 10 12gb ram 256gb rom.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">GALAXY NOTE 10 12gb ram 256gb rom</h5>
+          <p class="card-text">only at UGX. 750.000</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="./more.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">DELL laptop i5</h5>
+          <p class="card-text">at UGX.1.000.000</p>
+        </div>
+      </div>
+    </div>
+  </div>
     
 
 
